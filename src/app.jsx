@@ -5,27 +5,20 @@ import Player from "./player.jsx";
 
 function App() {
   return (
-    <div style={{ display: "flex" }}>
-      <Sidebar />
-      <div style={{ padding: "20px", flex: 1 }}>
-        <Routes>
-          <Route path="/" element={<h1>Inicio</h1>} />
-          <Route path="/search" element={<h1>Buscar</h1>} />
-          <Route path="/library" element={<h1>Tu Biblioteca</h1>} />
-        </Routes>
+    <div className="flex flex-col min-h-screen bg-zinc-900 text-white">
+      <div className="flex flex-1 overflow-hidden">
+        <Sidebar />
+        <main className="flex-1 p-4 pb-24 overflow-y-auto">
+          <Routes>
+            <Route path="/" element={<h1>Inicio</h1>} />
+            <Route path="/search" element={<h1>Búsqueda</h1>} />
+            <Route path="/library" element={<h1>Tu Biblioteca</h1>} />
+          </Routes>
+        </main>
       </div>
 
-      <footer
-        style={{
-          background: "#282828",
-          color: "#fff",
-          padding: "10px 20px",
-          textAlign: "center",
-        }}
-      >
-        <h1>este sera un reproductor</h1>
-        <Player />
-      </footer>
+      {/* Player fuera del flujo normal del layout */}
+      <Player />
     </div>
   );
 }

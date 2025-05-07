@@ -3,20 +3,14 @@ import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
-    <nav className="sidebar">
-      <h2>🎧Spotify</h2>
-      <ul>
-        <li>
-          <Link to="/">Inicio</Link>
-        </li>
-        <li>
-          <Link to="/search">Buscar</Link>
-        </li>
-        <li>
-          <Link to="/library">Tu Biblioteca</Link>
-        </li>
+    <div className="w-64 h-screen bg-gray-900 text-white p-4 flex flex-col">
+      <div className="text-2xl font-bold mb-6">Spotify</div>
+      <ul className="space-y-4">
+        <li className="hover:text-green-500 cursor-pointer">Inicio</li>
+        <li className="hover:text-green-500 cursor-pointer">Buscar</li>
+        <li className="hover:text-green-500 cursor-pointer">Tu biblioteca</li>
       </ul>
-    </nav>
+    </div>
   );
 }
 
