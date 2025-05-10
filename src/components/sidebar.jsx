@@ -1,5 +1,6 @@
 import React from "react";
 import { FaHome, FaSearch, FaMusic } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -12,13 +13,16 @@ const Sidebar = () => {
         />
         <ul className="space-y-4">
           <li className="flex items-center gap-3 text-sm font-semibold hover:text-green-500 cursor-pointer">
-            Inicio
+            <FaHome />
+            <span>Inicio</span>
           </li>
           <li className="flex items-center gap-3 text-sm font-semibold hover:text-green-500 cursor-pointer">
-            Buscar
+            <FaSearch />
+            <span>Buscar</span>
           </li>
           <li className="flex items-center gap-3 text-sm font-semibold hover:text-green-500 cursor-pointer">
-            Tu biblioteca
+            <FaMusic />
+            <span>Tu biblioteca</span>
           </li>
         </ul>
       </div>

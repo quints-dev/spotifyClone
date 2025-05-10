@@ -3,6 +3,9 @@ import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/sidebar.jsx";
 import Player from "./components/player.jsx";
 import Header from "./components/header.jsx";
+import Inicio from "./pages/inicio.jsx";
+import Buscar from "./pages/buscar.jsx";
+import Biblioteca from "./pages/biblioteca.jsx";
 
 function App() {
   return (
@@ -15,16 +18,15 @@ function App() {
             <Routes>
               <Route
                 path="/"
-                element={<h1 className="text-white text-2xl">Inicio</h1>}
+                element={
+                  <>
+                    <h1 className="text-white text-2xl mb-4">Inicio</h1>
+                    <Inicio />
+                  </>
+                }
               />
-              <Route
-                path="/search"
-                element={<h1 className="text-white text-2xl">Búsqueda</h1>}
-              />
-              <Route
-                path="/library"
-                element={<h1 className="text-white text-2xl">Tu Biblioteca</h1>}
-              />
+              <Route path="/search" element={<Buscar />} />
+              <Route path="/library" element={<Biblioteca />} />
             </Routes>
           </main>
         </div>
