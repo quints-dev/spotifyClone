@@ -11,7 +11,7 @@ function Player() {
     <footer className="fixed bottom-0 w-full h-24 bg-[#181818] text-white flex items-center justify-between px-4 border-t border-[#282828]">
       <div className="flex items-center gap-4 w-1/4">
         <img
-          src="/public/images/ab67616d0000b273304dbb3e13db9dae376c7a51.jpeg"
+          src="/public/images/love-lesbian.png"
           alt="albumCover"
           className="w-14 h-14 object-cover rounded"
         />

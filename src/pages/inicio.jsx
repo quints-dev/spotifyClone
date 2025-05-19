@@ -5,31 +5,31 @@ const albums = [
     id: 1,
     title: "1999",
     artist: "Love of Lesbian",
-    cover: "/public/images/ab67616d0000b273304dbb3e13db9dae376c7a51.jpeg",
+    cover: "/public/images/love-lesbian.png",
   },
   {
     id: 2,
     title: "CALL ME IF YOU GET LOST: The Estate Sale",
     artist: "Tyler, the Creator",
-    cover: "/public/images/callme.jpeg",
+    cover: "/public/images/call-me.png",
   },
   {
     id: 3,
     title: "Rubber Soul",
     artist: "The Beatles",
-    cover: "/public/images/beatles.jpeg",
+    cover: "/public/images/rubber-soul.png",
   },
   {
     id: 4,
     title: "Random Access Memories",
     artist: "Daft Punk",
-    cover: "/public/images/ab67616d0000b2733c196ec7c5344d654ff552e9.jpg",
+    cover: "/public/images/random-access.png",
   },
   {
     id: 5,
     title: "Tomas va a Morir",
     artist: "Tomas va a Morir",
-    cover: "/public/images/tomas.png",
+    cover: "/public/images/tomas-morir.png",
   },
 ];
 
