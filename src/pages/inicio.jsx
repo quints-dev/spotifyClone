@@ -35,9 +35,9 @@ const albums = [
 
 const Inicio = () => {
   return (
-    <div>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 className="text-2xl font-bold mb-4">Escuchado recientemente</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
         {albums.map((album) => (
           <div
             key={album.id}
@@ -46,10 +46,10 @@ const Inicio = () => {
             <img
               src={album.cover}
               alt={album.title}
-              className="w-full h-auto rounded mb-3"
+              className="w-full aspect-square object-cover rounded mb-3"
             />
-            <h3 className="text-sm font-semibold">{album.title}</h3>
-            <p className="text-xs text-gray-400">{album.artist}</p>
+            <h3 className="text-sm font-semibold truncate">{album.title}</h3>
+            <p className="text-xs text-gray-400 truncate">{album.artist}</p>
           </div>
         ))}
       </div>
