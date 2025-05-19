@@ -10,28 +10,26 @@ import Biblioteca from "./pages/biblioteca.jsx";
 function App() {
   return (
     <div className="flex flex-col min-h-screen bg-black text-white">
-      <div className="flex-1 overflow-y-auto">
-        <Header />
-        <div className="flex flex-1">
-          <Sidebar />
-          <main className="flex-1 p-6 overflow-y-auto">
-            <Routes>
-              <Route
-                path="/"
-                element={
-                  <>
-                    <h1 className="text-white text-2xl mb-4">Inicio</h1>
-                    <Inicio />
-                  </>
-                }
-              />
-              <Route path="/search" element={<Buscar />} />
-              <Route path="/library" element={<Biblioteca />} />
-            </Routes>
-          </main>
-        </div>
-        <Player />
+      <Header />
+      <div className="flex flex-1 flex-col md:flex-row overflow-hidden">
+        <Sidebar />
+        <main className="flex-1 p-4 overflow-y-auto">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <h1 className="text-white text-2xl mb-4">Inicio</h1>
+                  <Inicio />
+                </>
+              }
+            />
+            <Route path="/search" element={<Buscar />} />
+            <Route path="/library" element={<Biblioteca />} />
+          </Routes>
+        </main>
       </div>
+      <Player />
     </div>
   );
 }
