@@ -7,7 +7,7 @@ const Sidebar = () => {
     <div className="w-60 h-screen bg-black text-white p-4 flex flex-col">
       <div className="mb-8">
         <img
-          src="/public/images/spotify_primary_logo_white.png"
+          src="/images/spotify_primary_logo_white.png"
           alt="Logo"
           className="h-10 w-10 mb-4"
         />
